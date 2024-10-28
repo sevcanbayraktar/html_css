@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box; /*tüm kutu boyutlarının belirlenen değerlerde olması sağlandı*/
+    margin: 0px;
+    padding: 0px; /*tarayıcının varsayılan ayarları olabilir o nedenle başlangıçta değerlerimizi sıfırladık*/
+}
+body{
+    
+    background-color: #b5d19b;
+}  
+.ust{
+    margin: auto; /*kutuyu ortaladık.*/
+    margin-top: 50px; /*kutuya üstten boşluk verdik*/
+    width: 90%;
+    height: 500px;
+    background-color:#d9e2af;
+    text-align: center;
+    padding: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /*kutumuza gölge verildi*/
+}
+.ust header h1{
+    font-size: 50px;
+    font-weight: 85; /* kalınlık */
+    padding-bottom: 30px;
+}
+.ust header h3{
+    font-size: 20px;
+    font-weight: bold; /* kalınlık */
+    padding-bottom: 10px;
+}
+.ust header h2{
+    font-size:  25px;
+    font-weight: 55; /* kalınlık */
+    padding-bottom: 60px    ;
+}
+.ust header ul li{
+    list-style-type: none;
+
+}  
+.ust footer ul li{
+    display: inline; /* ikonlar yan yana durur. */
+    margin: 6px; /* ikonlar arasındaki mesafe. */
+    list-style-type: none;
+}
+.ust footer li a{
+    color:#496724; /* ikonların rengi */
+    font-size: 16px;
+    text-decoration: none; /*link çizgileri kaldırıldı*/
+    transition: all ease-in-out 250ms; /* imleç ikon üzerine getirilince renk değişimi olur. */
+}
+.ust footer li a:hover{
+    color:#a16274; /* imleç ikon üzerine gelince oluşacak olan renk. */
+   
+}
+footer{
+    padding-top: 70px;
+    position: absolute; /*konum ayarlandı*/
+    top: 400px;
+    right: 550px;
+}
+
