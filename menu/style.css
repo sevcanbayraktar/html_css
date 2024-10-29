@@ -1,0 +1,81 @@
+/*genel ayarlar*/
+*{
+    box-sizing: border-box; /*tüm kutu boyutlarının belirlenen değerlerde olması sağlandı*/
+    margin: 0px;
+    padding: 0px; /*tarayıcının varsayılan ayarları olabilir o nedenle başlangıçta değerlerimizi sıfırladık*/
+}
+body{
+    background-color:#ff9e17; /*ana ekranın arkaplan rengi*/
+}
+.container{
+    margin: auto; /*oluşturduğumuz kutuyu ortaladık*/
+    margin-top: 30px; /*oluşturduğumuz kutuya üst tarafından boşluk verdik.*/
+    width: 80%; /*kutumuzun genişliğini ana ekranın %80i olarak ayarladık.*/
+    height: 680px;
+    background-color:#eacc4d; /*kutumuzun arkaplan rengi*/
+    border-radius: 10%; /*kutumuzun kenarlarına eğim verildi.*/
+    box-shadow: 0 4px 8px 0 rgba(247, 244, 244, 0.99), 0 6px 20px 0 rgba(247, 245, 245, 0.984); /*kutumuza gölge verildi*/
+}
+/*başlık ayarları*/
+body h1{
+    font-family: Papyrus;
+    font-weight: lighter;
+    font-size: 50px;
+    font-style: italic;
+    text-align: center; /*başlığımız ortalandı*/
+    padding-top: 20px;
+}
+/*alt başlık ayarları*/
+section h2{
+    padding: 0 0 5px 70px;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 30px;
+}
+.isim{
+    float: left; /*yazılar ve görseller yan yana getirildi*/
+    padding-top: 30px;
+    padding-left: 100px;
+}
+.isim section li{
+    list-style-type: none; /*liste imleçleri*/
+    font-family: Papyrus;
+    padding: 10px 0 10px 60px;
+    text-align: center;
+}
+.img{
+    height: 650px; /*görsellerin kutusu boyutlandırıldı.*/
+    width: 500px;
+    position: absolute; /*görsellerin içerisinde olduğu kutumuz konumlandırıldı.*/
+    right: 200px;
+    top: 150px;
+    border-left: black solid 2px; /*görsellerin kutusuna sadece sol taraftan border verildi.*/
+} 
+/*görsellerin genel ayarları*/
+img{
+    width: 250px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-radius: 30%;
+    box-shadow: 2px 2px black;
+}
+img:hover{
+    transform: scale(0.9); /* imleç görsel üzerine gelince görselde küçülme efekti oluşur. */
+}
+/*görsellerin tek tek konumlandırılması*/
+#sutlac{
+    position: absolute;
+    right: 200px;
+    top: 50px;
+}
+#pasta{
+    position: absolute;
+    right: 5px;
+    top: 150px;
+}
+#ekler{
+    position: absolute;
+    right: 200px;
+    top: 350px;
+}
+
